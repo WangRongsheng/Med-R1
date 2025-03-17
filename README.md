@@ -1,4 +1,5 @@
-# Med-R1
+<center><h1>Med-R1</h1></center>
+
 Encourage Medical LLM to engage in deep thinking similar to DeepSeek-R1.
 
 |Model Name|Train Data Size|Training Strategy|
