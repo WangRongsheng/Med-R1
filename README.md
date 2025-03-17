@@ -9,7 +9,7 @@ Inspired by the success of [DeepSeek-R1](https://huggingface.co/deepseek-ai/Deep
 
 Med-R1 is dedicated to translating the success of RL in the training of LLMs within general domains to the medical field. To ensure that the model possesses a comprehensive reserve of medical knowledge, we have adopted a large-parameter base model. Specifically, this model integrates vast amounts of multi-source heterogeneous data, including medical literature, clinical guidelines, and electronic health records during the pre-training phase. Through fine-tuning, the model is refined to accurately understand and generate specialized medical content with nuanced reasoning.
 
-- ⬆️ Achieves SOTA with only limited training samples. A model with only *14B parameters* outperforms [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct), and [Claude-3.5-Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet) on various medical tasks.
+- 🔺 Achieves SOTA with only limited training samples. A model with only *14B parameters* outperforms [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct), and [Claude-3.5-Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet) on various medical tasks.
 - 🌟 Shows strong generalization across diverse problem types. It excels not only in medical tasks but also in mathematics and various other challenging problems (such as [Ruozhiba](https://huggingface.co/datasets/m-a-p/COIG-CQIA)).
 - 📚 Release open-source models and various tools, such as training datasets, RAG demo, etc.
 
