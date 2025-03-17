@@ -1,10 +1,21 @@
-<center><h1>Med-R1</h1></center>
+<div align="center">
+    <h1> 👨‍⚕️Med-R1 </h1>
+    <em> Encourage Medical LLM to engage in deep thinking similar to DeepSeek-R1. </em>
+</div>
 
-Encourage Medical LLM to engage in deep thinking similar to DeepSeek-R1.
+# Overview
 
-|Model Name|Train Data Size|Training Strategy|
-|:-|:-|:-|
-|Med-R1|4,000|-|
+Inspired by the success of [DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1) in training models using RL, many open-source projects have made significant progress in exploring the effectiveness of RL training. These projects not only validate RL as an effective training method but also showcase its potential across various application scenarios. However, such efforts have so far only replicated this success **within limited domains** and **with smaller-parameter LLMs**, without fully extending to larger-scale, more complex models and a broader range of tasks.
+
+Med-R1 is dedicated to translating the success of RL in the training of LLMs within general domains to the medical field. To ensure that the model possesses a comprehensive reserve of medical knowledge, we have adopted a large-parameter base model. Specifically, this model integrates vast amounts of multi-source heterogeneous data, including medical literature, clinical guidelines, and electronic health records during the pre-training phase. Through fine-tuning, the model is refined to accurately understand and generate specialized medical content with nuanced reasoning.
+
+- ⬆️ Achieves SOTA with only limited training samples. A model with only *14B parameters* outperforms [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct), and [Claude-3.5-Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet) on various medical tasks.
+- 🌟 Shows strong generalization across diverse problem types. It excels not only in medical tasks but also in mathematics and various other challenging problems (such as [Ruozhiba](https://huggingface.co/datasets/m-a-p/COIG-CQIA)).
+- 📚 Release open-source models and various tools, such as training datasets, RAG demo, etc.
+
+|Model Name|Train Data Size|Training Strategy|HuggingFace|ModelScope|
+|:-|:-|:-|:-|:-|
+|Med-R1|4,000|-|||
 
 # Examples
 
