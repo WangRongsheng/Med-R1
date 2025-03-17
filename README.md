@@ -20,6 +20,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 # TODO
 
 - [ ] Release model weights
+- [ ] Release training code
 - [ ] Release gradio demo
 - [ ] Release evaluation results
 - [ ] Release training dataset
