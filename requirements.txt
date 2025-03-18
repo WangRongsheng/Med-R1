@@ -1,0 +1,8 @@
+# python=3.10.8
+torch==2.1.2+cu118
+torchvision==0.16.2+cu118
+transformers==4.47.0
+accelerate==1.5.2
+datasets==3.4.0
+flash-attn==2.7.3
+gradio==5.21.0
