@@ -2,8 +2,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel, PeftConfig
 import torch
 
-model = AutoModelForCausalLM.from_pretrained("/root/autodl-tmp/Med-R1", trust_remote_code=True, torch_dtype = torch.bfloat16).cuda()
-tokenizer = AutoTokenizer.from_pretrained('/root/autodl-tmp/Med-R1', trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("/root/autodl-tmp/Med-R1", trust_remote_code=True, torch_dtype = torch.bfloat16).cuda() # https://modelscope.cn/models/wangrongsheng/Med-R1
+tokenizer = AutoTokenizer.from_pretrained('/root/autodl-tmp/Med-R1', trust_remote_code=True) # https://modelscope.cn/models/wangrongsheng/Med-R1
 model.eval()
 
 # prompt = "9.11和9.9哪个大？"
