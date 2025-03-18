@@ -24,8 +24,8 @@ def apply_lora(model_name_or_path, output_path, lora_path):
     base_tokenizer.save_pretrained(output_path)
 
 if __name__ == "__main__":
-    lora_path = "/root/autodl-tmp/output/Baichuan-m1/checkpoint-2000"
-    model_path = "/root/autodl-tmp/Baichuan-M1-14B-Instruct"
+    lora_path = "/root/autodl-tmp/output/Baichuan-m1/checkpoint-2000" # https://modelscope.cn/models/wangrongsheng/Med-R1
+    model_path = "/root/autodl-tmp/Baichuan-M1-14B-Instruct" # https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct
     output = "/root/autodl-tmp/Med-R1"
 
     apply_lora(model_path,output,lora_path)
