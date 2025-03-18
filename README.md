@@ -13,7 +13,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 - 🌟 Shows strong generalization across diverse problem types. It excels not only in medical tasks but also in mathematics and various other challenging problems (such as [Ruozhiba](https://huggingface.co/datasets/m-a-p/COIG-CQIA)).
 - 📚 Release open-source models and various tools, such as training datasets, gradio demo, etc.
 
-|Model Name|Train Data Size|Training Strategy|HuggingFace|ModelScope|
+|Model Name|Training Data Size|Training Strategy|HuggingFace|ModelScope|
 |:-|:-|:-|:-|:-|
 |Med-R1|4,000|SFT||[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
 
