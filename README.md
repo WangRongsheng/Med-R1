@@ -15,14 +15,15 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 
 |Model Name|Train Data Size|Training Strategy|HuggingFace|ModelScope|
 |:-|:-|:-|:-|:-|
-|Med-R1|4,000|-|||
-|Med-R1-α|-|-|||
+|Med-R1|4,000|-||[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
+
+<!--|Med-R1-α|-|-|||
 |Med-R1-β|-|-|||
-|Med-R1-γ|-|-|||
+|Med-R1-γ|-|-|||-->
 
 # TODO
 
-- [ ] Release model weights
+- [X] Release model weights
 - [ ] Release training code
 - [ ] Release gradio demo
 - [ ] Release evaluation results
