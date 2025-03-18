@@ -2,11 +2,11 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel, PeftConfig
 import torch
 
-peft_model_id = "/root/autodl-tmp/output/Baichuan-m1/checkpoint-2000"
+peft_model_id = "/root/autodl-tmp/output/Baichuan-m1/checkpoint-2000" # https://modelscope.cn/models/wangrongsheng/Med-R1
 config = PeftConfig.from_pretrained(peft_model_id)
-model = AutoModelForCausalLM.from_pretrained("/root/autodl-tmp/Baichuan-M1-14B-Instruct", trust_remote_code=True, torch_dtype = torch.bfloat16).cuda()
+model = AutoModelForCausalLM.from_pretrained("/root/autodl-tmp/Baichuan-M1-14B-Instruct", trust_remote_code=True, torch_dtype = torch.bfloat16).cuda() # https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct
 model = PeftModel.from_pretrained(model, peft_model_id)
-tokenizer = AutoTokenizer.from_pretrained('/root/autodl-tmp/Baichuan-M1-14B-Instruct', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('/root/autodl-tmp/Baichuan-M1-14B-Instruct', trust_remote_code=True) # https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct
 
 model.eval()
 
