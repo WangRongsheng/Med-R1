@@ -533,7 +533,7 @@ Med-R1回答：
 
 ```bibtex
 @Misc{med-r1,
-  title = {Med-R1},
+  title = {Med-R1: Encourage Medical LLM to engage in deep thinking similar to DeepSeek-R1},
   author = {Rongsheng Wang},
   howpublished = {\url{https://github.com/WangRongsheng/Med-R1}},
   year = {2025}
