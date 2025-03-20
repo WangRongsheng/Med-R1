@@ -43,8 +43,8 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 | 💊BioMistral-7B                     | 45.0   | 40.2    | 66.9     | 38.3     | 39.5   |
 | 💊OpenBioLLM-8B                   | 57.7   | 54.1    | 74.1     | 43.1     | 41.7   |
 | 💊UltraMedical-8B                  | 71.1   | 58.3    | 77.4     | 60.9     | 46.1   |
-| 💊HuatuoGPT-o1-8B-no-RL             | 69.0   | 57.9    | 77.7 | 59.9     | 47.4   |
-| 💊🤔HuatuoGPT-o1-8B-RL             | 72.6   | 60.4    | 79.2 | 63.5     | 54.3   |
+| 💊HuatuoGPT-o1-8B-no-RL【[2]】             | 69.0   | 57.9    | 77.7 | 59.9     | 47.4   |
+| 💊🤔HuatuoGPT-o1-8B-RL 【[2]】             | 72.6   | 60.4    | 79.2 | 63.5     | 54.3   |
 | 🤔Med-R1-α-8B【[1]】              | 71.5 | 60.1 | 77.6 | 61.1 | 50.0 |
 | 💊UltraMedical-70B              | 82.2 | 71.8 | 78.4 | 68.0 | 48.4 |
 | 💊OpenBioLLM-70B              | 76.1 | 74.7 | 79.2 | 72.8 | 46.8 |
@@ -54,11 +54,12 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 | Qwen2.5-72B-Instruct              | 72.7 | 66.2 | 71.7 | 72.1 | 49.0 |
 | 🤔QwQ-32B-Preview              | 72.3 | 65.6 | 73.7 | 70.1 | 51.0 |
 | Llama-3.1-70B-Instruct              | 78.4 | 72.5 | 78.5 | 74.5 | 57.1 |
-| 💊HuatuoGPT-o1-70B-no-RL              | 80.3 | 70.1 | 78.6 | 75.0 | 59.1 |
-| 💊🤔HuatuoGPT-o1-70B-RL              | 83.3 | 73.6 | 80.6 | 76.9 | 61.4 |
+| 💊HuatuoGPT-o1-70B-no-RL 【[2]】              | 80.3 | 70.1 | 78.6 | 75.0 | 59.1 |
+| 💊🤔HuatuoGPT-o1-70B-RL 【[2]】              | 83.3 | 73.6 | 80.6 | 76.9 | 61.4 |
 | 💊🤔**Med-R1 (ours)**              | 🎁 | 🎁 | 🎁 | 🎁 | 🎁 |
 
 [1]: https://github.com/cheliu-computation/Med-R1-Alpha
+[2]: https://github.com/FreedomIntelligence/HuatuoGPT-o1
 
 # Examples
 
