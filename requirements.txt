@@ -6,3 +6,5 @@ accelerate==1.5.2
 datasets==3.4.0
 flash-attn==2.7.3
 gradio==5.21.0
+peft==0.15.0
+sentencepiece==0.2.0
