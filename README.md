@@ -15,7 +15,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 
 |Model Name|Training Data Size|Training Strategy|HuggingFace|ModelScope|
 |:-|:-|:-|:-|:-|
-|Med-R1|4,000|SFT||[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
+|Med-R1|4,000|||[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
 
 <!--|Med-R1-α|-|-|||
 |Med-R1-β|-|-|||
