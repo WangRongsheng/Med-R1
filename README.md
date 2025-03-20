@@ -33,6 +33,33 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 
 # Evaluation
 
+| Model Name                         | MedQA  | MedMCQA | PubMedQA | MMLU-Pro | GPQA   |
+|------------------------------------|--------|---------|----------|----------|--------|
+| Mistral-7B-Instruct                | 48.2   | 44.6    | 59.5     | 43.7     | 38.5   |
+| Yi-1.5-9B-Chat                     | 50.8   | 48.7    | 69.8     | 49.9     | 45.3   |
+| GLM-4-9B-Chat                      | 58.9   | 49.8    | 73.5     | 54.5     | 40.9   |
+| Qwen2.5-7B-Instruct                | 57.0   | 55.6    | 72.7     | 53.2     | 40.0   |
+| Gemma2-9B                          | 61.8   | 55.9    | 63.3     | 65.0 | 46.2   |
+| Llama-3.1-8B-Instruct              | 58.7   | 56.0    | 75.2     | 58.7     | 42.7   |
+| BioMistral-7B                     | 45.0   | 40.2    | 66.9     | 38.3     | 39.5   |
+| OpenBioLLM-8B                   | 57.7   | 54.1    | 74.1     | 43.1     | 41.7   |
+| UltraMedical-8B                  | 71.1   | 58.3    | 77.4     | 60.9     | 46.1   |
+| HuatuoGPT-o1-8B-no-RL             | 69.0   | 57.9    | 77.7 | 59.9     | 47.4   |
+| HuatuoGPT-o1-8B-RL             | 72.6   | 60.4    | 79.2 | 63.5     | 54.3   |
+| Med-R1-α-8B【[1]】              | 71.5 | 60.1 | 77.6 | 61.1 | 50.0 |
+| UltraMedical-70B              | 82.2 | 71.8 | 78.4 | 68.0 | 48.4 |
+| OpenBioLLM-70B              | 76.1 | 74.7 | 79.2 | 72.8 | 46.8 |
+| DeepSeek-67B-Chat              | 57.1 | 51.7 | 76.1 | 56.6 | 45.5 |
+| Yi-1.5-34B-Chat              | 59.5 | 56.7 | 74.3 | 61.9 | 44.7 |
+| Gemma2-27B              | 65.4 | 60.2 | 72.6 | 68.7 | 47.1 |
+| Qwen2.5-72B-Instruct              | 72.7 | 66.2 | 71.7 | 72.1 | 49.0 |
+| QwQ-32B-Preview              | 72.3 | 65.6 | 73.7 | 70.1 | 51.0 |
+| Llama-3.1-70B-Instruct              | 78.4 | 72.5 | 78.5 | 74.5 | 57.1 |
+| HuatuoGPT-o1-70B-no-RL              | 80.3 | 70.1 | 78.6 | 75.0 | 59.1 |
+| HuatuoGPT-o1-70B-RL              | 83.3 | 73.6 | 80.6 | 76.9 | 61.4 |
+
+[1]: https://github.com/cheliu-computation/Med-R1-Alpha
+
 # Examples
 
 ### LLM Hacking （正确性：2/2）
