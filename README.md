@@ -56,7 +56,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 | Llama-3.1-70B-Instruct              | 78.4 | 72.5 | 78.5 | 74.5 | 57.1 |
 | 💊HuatuoGPT-o1-70B-no-RL 【[2]】              | 80.3 | 70.1 | 78.6 | 75.0 | 59.1 |
 | 💊🤔HuatuoGPT-o1-70B-RL 【[2]】              | 83.3 | 73.6 | 80.6 | 76.9 | 61.4 |
-| 💊🤔**Med-R1 (ours)**              | 🎁 | 🎁 | 🎁 | 🎁 | 🎁 |
+| 💊🤔**Med-R1 (ours)**              | 🎁 | 🎁 | 🎁 | 🎁 | 58.0 |
 
 [1]: https://github.com/cheliu-computation/Med-R1-Alpha
 [2]: https://github.com/FreedomIntelligence/HuatuoGPT-o1
