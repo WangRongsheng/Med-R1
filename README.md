@@ -66,6 +66,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 [2]: https://github.com/FreedomIntelligence/HuatuoGPT-o1
 [3]: https://arxiv.org/pdf/2501.09213
 [4]: https://arxiv.org/abs/2504.00993
+[5]: https://arxiv.org/pdf/2504.00869
 
 # Examples
 
