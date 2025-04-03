@@ -46,6 +46,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 | 💊UltraMedical-8B                  | 71.1   | 58.3    | 77.4     | 60.9     | 46.1   |
 | 💊HuatuoGPT-o1-8B-no-RL【[2]】             | 69.0   | 57.9    | 77.7 | 59.9     | 47.4   |
 | 💊🤔HuatuoGPT-o1-8B-RL 【[2]】             | 72.6   | 60.4    | 79.2 | 63.5     | 54.3   |
+| 💊🤔MedReason-8B 【[4]】             | 71.8   | 60.7    | 79.4 | -  | -   |
 | 💊🤔FineMedLM-o1 【[3]】             | -   | -    | - | 64.3     | -   |
 | 💊🤔FineMedLM-o1-TTT 【[3]】             | -   | -    | - | 72.8     | -   |
 | 🤔Med-R1-α-8B【[1]】              | 71.5 | 60.1 | 77.6 | 61.1 | 50.0 |
@@ -64,6 +65,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 [1]: https://github.com/cheliu-computation/Med-R1-Alpha
 [2]: https://github.com/FreedomIntelligence/HuatuoGPT-o1
 [3]: https://arxiv.org/pdf/2501.09213
+[4]: https://arxiv.org/abs/2504.00993
 
 # Examples
 
