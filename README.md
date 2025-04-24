@@ -15,7 +15,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 
 |Model Name|Training Data Size|Training Strategy|HuggingFace|ModelScope|
 |:-|:-|:-|:-|:-|
-|Med-R1|4,000|||[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
+|Med-R1|4,000|SFT||[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
 
 <!--|Med-R1-α|-|-|||
 |Med-R1-β|-|-|||
@@ -60,7 +60,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 | Llama-3.1-70B-Instruct              | 78.4 | 72.5 | 78.5 | 74.5 | 57.1 |
 | 💊HuatuoGPT-o1-70B-no-RL 【[2]】              | 80.3 | 70.1 | 78.6 | 75.0 | 59.1 |
 | 💊🤔HuatuoGPT-o1-70B-RL 【[2]】              | 83.3 | 73.6 | 80.6 | 76.9 | 61.4 |
-| 💊🤔**Med-R1-14B (ours)**              | 84.6 | 🎁 | 76.0 | 🎁 | 58.0 |
+| 💊🤔**Med-R1-14B (ours)**              | 84.6 | 71.7 | 76.0 | 83.2 | 58.0 |
 
 [1]: https://github.com/cheliu-computation/Med-R1-Alpha
 [2]: https://github.com/FreedomIntelligence/HuatuoGPT-o1
