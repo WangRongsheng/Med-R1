@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-[📃 <a href="https://arxiv.org" target="_blank">Blog</a>] ｜ [🤗 <a href="https://huggingface.co" target="_blank">Model</a>] 
+[📃 <a href="https://arxiv.org" target="_blank">Blog</a>] ｜ [🤗 <a href="https://huggingface.co/wangrongsheng/Med-R1-LoRA-checkpoints" target="_blank">Model</a>] 
 </p>
 
 # Overview
@@ -19,7 +19,7 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 
 |Model Name|Training Data Size|Training Strategy|HuggingFace|ModelScope|
 |:-|:-|:-|:-|:-|
-|Med-R1|4,000|SFT||[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
+|Med-R1|4,000|SFT|[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤗%20Huggingface)](https://huggingface.co/wangrongsheng/Med-R1-LoRA-checkpoints)|[![Static Badge](https://img.shields.io/badge/-gery?style=social&label=🤖%20ModelScope)](https://modelscope.cn/models/wangrongsheng/Med-R1)|
 
 <!--|Med-R1-α|-|-|||
 |Med-R1-β|-|-|||
@@ -69,6 +69,44 @@ Med-R1 is dedicated to translating the success of RL in the training of LLMs wit
 [3]: https://arxiv.org/pdf/2501.09213
 [4]: https://arxiv.org/abs/2504.00993
 [5]: https://arxiv.org/pdf/2504.00869
+
+# Usage
+
+```python
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from peft import PeftModel, PeftConfig
+import torch
+
+peft_model_id = "wangrongsheng/Med-R1-LoRA-checkpoints"
+base_model_id = "baichuan-inc/Baichuan-M1-14B-Instruct"
+
+config = PeftConfig.from_pretrained(peft_model_id)
+model = AutoModelForCausalLM.from_pretrained(base_model_id, trust_remote_code=True, torch_dtype = torch.bfloat16).cuda()
+model = PeftModel.from_pretrained(model, peft_model_id)
+tokenizer = AutoTokenizer.from_pretrained(base_model_id, trust_remote_code=True)
+
+model.eval()
+
+prompt = """
+    患者：被沾有病人血液的实心针头扎了，针头是一天前沾的病人血液，还有传染疾病的可能吗（女, 年龄26岁）
+    医生：请问您是否知道那位病人的具体健康状况或是否患有任何传染性疾病？例如，乙肝、丙肝或艾滋病等？
+    患者：不知道。
+    医生：请问您是否接种过乙型肝炎疫苗？
+    患者：接种过。
+    医生：请问您被扎到的具体部位是哪里？伤口的深度如何？是否有出血？
+    患者：大拇指根部，深度大约0.5厘米，出血了。
+    
+    根据以上信息，若该病人同时患有乙肝、丙肝或艾滋病，患者最可能感染哪种疾病，并说明理由。
+"""
+input = tokenizer("<|im_start|>system\n你是一个有用的助手<|im_end|>\n<|im_start|>user\n{}<|im_end|>\n".format(prompt, "").strip() + "\nassistant\n ", return_tensors="pt").to(model.device)
+
+outputs = model.generate(
+    **input,
+    max_length=8192,
+    temperature=0.6
+)
+print(tokenizer.decode(outputs[0], skip_special_tokens=True).replace("system\n你是一个有用的助手\nuser\n{}\n".format(prompt, "").strip() + "\nassistant\n ", ""))
+```
 
 # Examples
 
