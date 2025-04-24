@@ -3,6 +3,10 @@
     <em> Encourage Medical LLM to engage in deep thinking similar to DeepSeek-R1. </em>
 </div>
 
+<p align="center">
+[📃 <a href="https://arxiv.org" target="_blank">Blog</a>] ｜ [🤗 <a href="https://huggingface.co" target="_blank">Model</a>] 
+</p>
+
 # Overview
 
 Inspired by the success of [DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1) in training models using RL, many open-source projects have made significant progress in exploring the effectiveness of RL training. These projects not only validate RL as an effective training method but also showcase its potential across various application scenarios. However, such efforts have so far only replicated this success **within limited domains** and **with smaller-parameter LLMs**, without fully extending to larger-scale, more complex models and a broader range of tasks.
